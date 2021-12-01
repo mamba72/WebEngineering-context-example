@@ -13,6 +13,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 body {
@@ -63,13 +64,36 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
+/* article {
+  display: flex;
+} */
+
 .card {
+  /* display: flex; */
+  /* flex-direction: column; */
   flex: 1;
   overflow: hidden;
-  min-width: 300px;
+  /* min-width: 300px; */
+  min-width: 30rem;
   border-radius: 20px;
+  /* max-width: 50rem; */
+  /* width: clamp(300px, 45%, 50%); */
+  /* max-width: 100px; */
+  /* max-width: 75%; */
+  /* max-height: 40%; */
+}
+.card h1, 
+.card h2, 
+.card h3, 
+.card h4, 
+.card h5, 
+.card p {
+  color: black;
 }
 .card .img-wrapper {
   overflow: hidden;
@@ -81,6 +105,7 @@ a {
   height: 30%;
   width: 100%;
   object-fit: contain;
+  /* object-position: center; */
 }
 .card .content {
   padding: 20px;
@@ -104,3 +129,79 @@ a {
   font-size: 1.5rem;
   padding-bottom: 20px;
 }
+
+
+.cart-card {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+  min-width: 300px;
+  border-radius: 20px;
+  /* width: clamp(300px, 45%, 50%); */
+  /* max-width: 100px; */
+  /* max-width: 75%; */
+  /* max-height: 40%; */
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.cart-card h1, 
+.cart-card h2, 
+.cart-card h3, 
+.cart-card h4, 
+.cart-card h5, 
+.cart-card p {
+  color: black;
+}
+.cart-card .img-wrapper {
+  overflow: hidden;
+  max-height: 300px;
+  max-width: 50%;
+  padding: 30px;
+  border-radius: 20px;
+}
+.cart-card .img-wrapper img {
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  /* width: 100%; */
+  object-fit: contain;
+  border-radius: 20px;
+}
+.cart-card .content {
+  padding: 20px;
+  background-color: white;
+}
+.cart-card .content button {
+  width: 100%;
+  padding: 15px 0;
+  color: white;
+  font-weight: 700;
+  background-color: #81b29a;
+  border: none;
+  border-radius: 10px;
+}
+
+.cart-card .content h2 {
+  padding: 5px 0;
+}
+
+.cart-card .content .price {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+.cart-card .content .plant-name {
+  color: green;
+}
+
+.TotalPrice {
+  margin: 1rem;
+  text-align: right;
+  font-size: x-large;
+  font-weight: bold;
+}
+
